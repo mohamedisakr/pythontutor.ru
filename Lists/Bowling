@@ -1,0 +1,7 @@
+N, K = [int(x) for x in input().split()]
+a = ['I' for x in range(N)]
+for i in range(K):
+    l, r = [int(x) for x in input().split()]
+    for j in range(l, r+1):
+        a[j-1] = '.'        
+print(''.join(str(i) for i in a))
