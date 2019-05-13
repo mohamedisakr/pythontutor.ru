@@ -1,0 +1,7 @@
+a = [int(x) for x in input().split()]
+index, value = [int(x) for x in input().split()]
+a.append(0)
+for i in range(len(a)-1 , index, -1):
+    a[i] = a[i-1]
+a[index] = value
+print(' '.join(str(x) for x in a))
