@@ -1,0 +1,7 @@
+a = [int(x) for x in input().split()]
+n = min(a)
+idx_min = a.index(n)
+x = max(a)
+idx_max = a.index(x)
+a[idx_min] , a[idx_max] = a[idx_max] , a[idx_min]
+print(' '.join(str(i) for i in a))
